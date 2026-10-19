@@ -2,7 +2,7 @@
 
 How much of a city is green, and does that change through the year the way you'd expect? This project measures **green area** from satellite images (Landsat-8 and Sentinel-2, 2016-2021) in Hanoi, Ho Chi Minh City (Saigon), their outskirts and Khanh Hoa province, and compares them with **Seville, Spain**, a clear-sky city used as a reference.
 
-It started as a research project in spring 2024. I did it on my own as a high school student in Hanoi, with a teacher facilitating, and wrote it up as a short paper with interactive Tableau dashboards. In October 2026 I reorganized the code and data into this repo. The original findings are kept as they were, and [what I changed](#what-i-changed-in-this-version) is listed below.
+It started as a high school research project in spring 2024. In October 2026 I reorganized the code and data into this repo. The original findings are kept as they were, and [what I changed](#what-i-changed-in-this-version) is listed below.
 
 ![Seville's yearly cycle](reports/seville_seasonal_cycle.png)
 
