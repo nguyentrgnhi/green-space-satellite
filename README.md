@@ -2,7 +2,7 @@
 
 How much of a city is green, and does that change through the year the way you'd expect? This project measures **green area** from satellite images (Landsat-8 and Sentinel-2, 2016-2021) in Hanoi, Ho Chi Minh City (Saigon), their outskirts and Khanh Hoa province, and compares them with **Seville, Spain**, a clear-sky city used as a reference.
 
-It started as a research project in spring 2024, which I did with a classmate as a high school student in Hanoi and wrote up as a short paper with interactive Tableau dashboards. In October 2026 I reorganized the code and data into this repo. The original findings are kept as they were, and [what I changed](#what-i-changed-in-this-version) is listed below.
+It started as a research project in spring 2024. I did it on my own as a high school student in Hanoi, with a teacher facilitating, and wrote it up as a short paper with interactive Tableau dashboards. In October 2026 I reorganized the code and data into this repo. The original findings are kept as they were, and [what I changed](#what-i-changed-in-this-version) is listed below.
 
 ![Seville's yearly cycle](reports/seville_seasonal_cycle.png)
 
@@ -44,7 +44,7 @@ Nothing in the data or the conclusions above changed. What changed is how it's o
   - *Is the seasonal pattern consistent?* Average year-to-year correlation of each region's monthly profile: Seville 0.85, but only Hanoi outskirts comes close among the Vietnamese regions (0.75 in Sentinel-2 data), Hanoi city about 0.35 to 0.40, and Saigon and Khanh Hoa low (between −0.04 and 0.26). This supports the finding that the Vietnamese regions lack Seville's cycle, but **only partly supports** the idea that outskirts and Khanh Hoa are steadier: true for Hanoi outskirts, not for Saigon outskirts or Khanh Hoa.
   - *Does cloud cover explain the noise?* In the raw data, measured green area falls steadily as cloud cover rises, in every region including Seville (Hanoi city: about 123 km² on the clearest images vs about 9 km² on the cloudiest). The median image is 77% cloud in Hanoi city but only 6% in Seville, which backs up the paper's main explanation.
 - **Tidied names and details:** consistent file names (`<region>_<satellite>.csv`; I fixed "saison" → "saigon" in one name); my Google Cloud project ID is replaced by an environment variable; the units are square kilometres (the collection code converts to km²; the paper's text called them hectares).
-- **Not included:** the paper itself (it names school and co-author details), the Tableau workbooks, and the polygons for four of the six regions, which were drawn interactively in Earth Engine and not saved. Their results are in `data/`.
+- **Not included:** the paper itself (it names my school and a teacher), the Tableau workbooks, and the polygons for four of the six regions, which were drawn interactively in Earth Engine and not saved. Their results are in `data/`.
 
 ## Data
 
@@ -64,7 +64,7 @@ Re-collecting from satellite data needs a Google Earth Engine account (`eartheng
 
 | When | What |
 |---|---|
-| Spring 2024 | The original study: data collection in Earth Engine, cleaning, Tableau dashboards, and a short paper (with a classmate) |
+| Spring 2024 | The original study, done independently with a teacher facilitating: data collection in Earth Engine, cleaning, Tableau dashboards, and a short paper |
 | October 2026 | Reorganized into this repo: consolidated scripts, a reproducible cleaning step, a notebook with two added checks, and this write-up |
 
 ## License
